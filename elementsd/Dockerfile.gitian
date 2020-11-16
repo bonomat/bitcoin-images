@@ -17,3 +17,9 @@ COPY ./elements/bin /usr/local/bin/
 COPY ./elements/include /usr/local/include/
 COPY ./elements/lib /usr/local/lib/
 COPY ./elements/share /usr/local/share/
+
+EXPOSE 8332 18332 
+EXPOSE 18332 8332
+EXPOSE 18443 18332
+EXPOSE 7041 8332
+EXPOSE 7040 18332

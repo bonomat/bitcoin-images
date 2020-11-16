@@ -30,3 +30,9 @@ RUN gpg --keyserver keyserver.ubuntu.com --recv-keys ${ELEMENTS_PGP_KEY} \
   && apk del wget ca-certificates \
   && rm -rf elements* \
   && rm -rf glibc-*
+
+EXPOSE 8332 18332 
+EXPOSE 18332 8332
+EXPOSE 18443 18332
+EXPOSE 7041 8332
+EXPOSE 7040 18332
